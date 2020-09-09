@@ -1,0 +1,63 @@
+.card {
+  box-align: center;
+  width: 18rem;
+  text-align: center;
+  background-color: beige;
+  position: center;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+
+.card_1 {
+  box-align: center;
+  width: 80%;
+  text-align: center;
+  background-color: #f1f0f0;
+  position: center;
+  margin: 0 auto; /* Added */
+  float: none;
+  margin-top: 50px;
+  margin-bottom: 50px; /* Added */
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 7);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0);
+  border-radius: 25px;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.body {
+  /* background image centered and non repeating */
+  background-repeat: no-repeat;
+  position: center;
+  background-size: cover;
+  background-image: url(https://media.giphy.com/media/WS0TmLDZ6owr9H9zGr/giphy.gif);
+}
+
+.body_1 {
+  /* background image centered and non repeating */
+  background-repeat: repeat;
+  background-position: center;
+  background-image: ;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  padding: none;
+  margin: 0;
+  text-decoration: none;
+  background: inherit;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
