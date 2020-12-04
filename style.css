@@ -26,6 +26,14 @@
   border-radius: 25px;
 }
 
+#artgallary-show {
+  object-fit: cover;
+  object-position: 50% 0;
+  height: 1200px;
+  width: 1500px;
+  border-radius: 20px;
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
 }
@@ -60,4 +68,266 @@ body {
   transition: background 250ms ease-in-out, transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-row-gap: 35px;
+  grid-column-gap: 0px;
+  margin: 0px 0;
+  grid-auto-rows: 150px;
+  justify-items: center;
+}
+
+.album .album-card {
+  position: relative;
+  width: 170px;
+}
+
+.album .album-card .image {
+  width: 200px;
+  height: 350px;
+}
+
+.album .album-card .image .pic {
+  height: 150px;
+  width: 150px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0);
+  border-radius: 5px;
+  position: relative;
+  /* for Description */
+  /* content: attr(title); */
+
+  object-fit: cover;
+}
+
+.album .album-card .image .fridge {
+  object-fit: cover;
+  object-position: 50% 0;
+  height: 160px;
+  width: 95px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.polaroid-card {
+  position: absolute;
+  box-align: center;
+  height: 155px;
+  width: 150px;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  position: center;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.polaroid-1 {
+  top: 190px;
+  left: 290px;
+}
+.polaroid-2 {
+  top: 190px;
+  left: 470px;
+}
+.polaroid-3 {
+  top: 450px;
+  left: 290px;
+}
+.polaroid-4 {
+  top: 450px;
+  left: 470px;
+}
+.polaroid-5 {
+  top: 645px;
+  left: 110px;
+}
+.polaroid-6 {
+  top: 645px;
+  left: 290px;
+}
+.polaroid-7 {
+  top: 645px;
+  left: 470px;
+}
+.polaroid-8 {
+  top: 840px;
+  left: 110px;
+}
+.polaroid-9 {
+  top: 840px;
+  left: 290px;
+}
+.polaroid-10 {
+  top: 840px;
+  left: 470px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.artgallary-img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  /*     margin: px 75px 30px; */
+  padding: 10px 1px 2px;
+}
+
+.img-text-div {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  padding: 3px 3px;
+}
+
+.artgallry-display {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1200px;
+  width: 1800px;
+}
+
+.r-1 {
+  transform: rotate(-1deg);
+}
+
+.r-2 {
+  transform: rotate(-2deg);
+}
+
+.r-3 {
+  transform: rotate(-3deg);
+}
+
+.r-4 {
+  transform: rotate(-4deg);
+}
+
+.r-5 {
+  transform: rotate(-5deg);
+}
+
+.r-6 {
+  transform: rotate(1deg);
+}
+
+.r-7 {
+  transform: rotate(2deg);
+}
+
+.r-8 {
+  transform: rotate(3deg);
+}
+
+.r-9 {
+  transform: rotate(4deg);
+}
+
+.r-10 {
+  transform: rotate(0deg);
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-card {
+  width: 300px;
+  border: 1px solid #00000020;
+  border-radius: 2px;
+  text-align: left;
+  background-color: white;
+}
+
+.image2 {
+  width: 300px;
+  /* border: 1px solid black; */
+}
+
+.title {
+  text-align: left;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000000dd;
+}
+
+.likes-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.li-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.delete-button {
+  justify-content: space-between;
+  align-items: left;
+  transition: color 300ms;
+  cursor: pointer;
+}
+
+.comments {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+  font-size: 0.85rem;
+}
+
+.comments li {
+  margin: 2px 0;
+  letter-spacing: 0.2px;
+}
+
+.comment-form {
+  width: 100%;
+  border-top: 1px solid #00000020;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.comment-input {
+  width: 83%;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.comment-input:focus {
+  outline: none;
+}
+
+.comment-button {
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(92, 114, 238);
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.comment-button:hover {
+  color: rgb(37, 68, 245);
+}
+
+.comment-button:active {
+  color: rgb(127, 146, 250);
+}
+
+.comment-button:focus {
+  outline: none;
 }
